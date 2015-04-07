@@ -1,0 +1,24 @@
+{
+  "name": "minimalflat2",
+  "version": "1.0.0",
+  "description": "WordPress theme for http://akabeko.me/blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "author": "akabeko",
+  "license": "GPLv2",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-load-plugins": "^0.9.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-stylus": "^2.0.1",
+    "require-dir": "^0.3.0"
+  }
+}
