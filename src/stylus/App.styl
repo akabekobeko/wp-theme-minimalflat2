@@ -1,0 +1,78 @@
+/*
+Theme Name: minimalflat2
+Theme URI: https://github.com/akabekobeko/wp-theme-minimalflat2
+Author: akabeko
+Author URI: http://akabeko.me/
+Description: WordPress theme for http://akabeko.me/blog
+Version: 1.0.0
+Tags: red, one-column, two-columns, right-sidebar, flexible-width
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+size_fill                          = 100%
+size_content_2column_width         = 1300px
+size_content_2column_main_width    = 1000px
+size_content_2column_sidebar_width = 300px
+
+html, body {
+  width size_fill
+  height size_fill
+  margin 0
+  padding 0
+  letter-spacing .08em
+}
+
+.clarfix {
+  clear both
+}
+
+.page {
+  width size_fill
+  height size_fill
+}
+
+.page > .header {
+  width size_fill
+}
+
+.page > .content {
+  max-width size_content_2column_width
+  margin auto
+
+  > .main {
+    float left
+    width size_content_2column_main_width
+  }
+
+  > .main-single {
+      margin auto
+      width size_fill
+      max-width size_content_2column_main_width
+  }
+
+  > .sidebar {
+    float right
+    width size_content_2column_sidebar_width
+  }
+}
+
+.page > .footer {
+  width size_fill
+}
+
+@media screen and ( max-width: size_content_2column_width ) {
+  .page > .content {
+    > .main {
+      float none
+      margin auto
+      width size_fill
+      max-width size_content_2column_main_width
+    }
+
+    > .sidebar {
+      float none
+      width size_fill
+    }
+  }
+}
