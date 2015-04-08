@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <nav class="menu">
+        <ul>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERIES</a></li>
+            <li><a href="">MEMO</a></li>
+            <li><a href="">SOFTWARE</a></li>
+        </ul>
+        <div class="clarfix"></div>
+    </nav>
+    <h1 class="title"><a href="">Site Title</a></h1>
+    <h2 class="subtitle">Hear Nothing, See Nothing, Say Nothing</h2>
+  </header>
+  <div class="content">
+    <div class="main">
+      <article class="post-0001">
+        <div class="header">
+            <h1 class="title"><a href="">マークアップ: HTML タグとフォーマット</a></h1>
+            <div class="meta">
+                <span class="value"><i class="icon-clock"></i> <a href="">2015年4月5日</a></span>
+                <span class="value"><i class="icon-comment"></i> <a href="" title="">0</a></span>
+                <span class="value"><i class="icon-category"></i> <a href="">JavaScript</a>, <a href="">node.js</a></span>
+                <span class="value"><i class="icon-tag" title="tags"></i> <a href="" rel="tag">Browserify</a>, <a href="">gulp</a>, <a href="">JavaScript</a>, <a href="">React.js</a>, <a href="">watchify</a></span>
+            </div>
+        </div>
+
+        <h2>見出し</h2>
+        <h1>見出し壱</h1>
+        <h2>見出し弐</h2>
+        <h3>見出し参</h3>
+        <h4>見出し四</h4>
+        <h5>見出し五</h5>
+        <h6>見出し六</h6>
+        <h2>引用 (Blockquote) テスト</h2>
+        <p>一行の引用。</p>
+        <blockquote><p>ハングリーであれ、愚かであれ。</p></blockquote>
+        <p><code>cite</code> 参照を含む複数行の引用。</p>
+        <blockquote><p>これは言語みたいなものだ。アルファベットすなわち音階を学び、文すなわちコードを学ぶ。そしてやがてホーンと即興で会話するようになる。即興で話すのはすばらしいことだと思うが、私には決して会得できないだろう。しかし音楽ともなれば、私は即座によろこんで会話する。そう、それがジャズ音楽のすべてだ。</p>
+        <p><cite>スタン・ゲッツ</cite></p></blockquote>
+        <h2>テーブル</h2>
+        <table>
+        <thead>
+        <tr>
+        <th>社員</th>
+        <th>給料</th>
+        <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <th><a href="http://example.org/">山田太郎</a></th>
+        <td>1ドル</td>
+        <td>スティーブ・ジョブズが必要なサラリーと同じ額。</td>
+        </tr>
+        <tr>
+        <th><a href="http://example.org/">田中花子</a></th>
+        <td>1,000万円</td>
+        <td>ブログを書くために必要になる資金。</td>
+        </tr>
+        <tr>
+        <th><a href="http://example.org/">山本次郎</a></th>
+        <td>1億円</td>
+        <td>百聞は一見にしかず、ということで、カメラマンはブロガーの100倍。</td>
+        </tr>
+        <tr>
+        <th><a href="http://example.org/">中山愛子</a></th>
+        <td>10億円</td>
+        <td>特に理由は要りません。</td>
+        </tr>
+        </tbody>
+        </table>
+        <dl>
+        <dt>定義リストタイトル</dt>
+        <dd>これは定義リストです。</dd>
+        <dt>定義</dt>
+        <dd>物事、領域、何かについての意味の正確な文章や説明: <em>詩を構成するものの定義。</em><em></em></dd>
+        <dt>ギャラリー</dt>
+        <dd>WordPress 2.5 から導入された、投稿に添付された画像を展示するための機能です。同じように、投稿を編集中にアップロードすると、そのファイルは「投稿に添付」されます。 </dd>
+        <dt>Gravatar (グラバター)</dt>
+        <dd>グラバターとはグローバルに認識されるアバター (あるユーザーを表すグラフィックイメージや写真) です。グラバターはメールアドレスと紐づいていて、Gravatar.com サービスによって管理されています。このサービスを利用すると、ブログ所有者は自分のブログを設定することによりコメント欄にユーザーのグラバターを表示させることができます。</dd>
+        </dl>
+        <h2>非順序リスト (ネスト化)</h2>
+        <ul>
+        <li>リスト項目 1
+        <ul>
+        <li>リスト項目 1
+        <ul>
+        <li>リスト項目 1</li>
+        <li>リスト項目 2</li>
+        <li>リスト項目 3</li>
+        <li>リスト項目 4</li>
+        </ul>
+        </li>
+        <li>リスト項目 2</li>
+        <li>リスト項目 3</li>
+        <li>リスト項目 4</li>
+        </ul>
+        </li>
+        <li>リスト項目 2</li>
+        <li>リスト項目 3</li>
+        <li>リスト項目 4</li>
+        </ul>
+        <h2>順序リスト (ネスト化)</h2>
+        <ol>
+        <li>リスト項目 1
+        <ol>
+        <li>リスト項目 1
+        <ol>
+        <li>リスト項目 1</li>
+        <li>リスト項目 2</li>
+        <li>リスト項目 3</li>
+        <li>リスト項目 4</li>
+        </ol>
+        </li>
+        <li>リスト項目 2</li>
+        <li>リスト項目 3</li>
+        <li>リスト項目 4</li>
+        </ol>
+        </li>
+        <li>リスト項目 2</li>
+        <li>リスト項目 3</li>
+        <li>リスト項目 4</li>
+        </ol>
+        <h2>HTML 要素タグテスト</h2>
+        <p>他の HTML タグは <a href="http://ja.support.wordpress.com/code/" rel="nofollow">FAQ</a> をご覧ください。</p>
+        <p><strong>住所タグ</strong></p>
+        <p>以下は住所の例です。<code>&lt;address&gt;</code> タグを使用しています:</p>
+        <address>〒100-0000<p></p>
+        <p>東京都千代田区1-1-1</p>
+        <p>日本</p></address>
+        <p><strong>anchor タグ (リンク)</strong></p>
+        <p>これは <a href="http://example.com/" rel="nofollow"><code>&lt;anchor&gt;</code></a> (もしくはリンクとも呼ばれます) の例です。</p>
+        <p><strong>abbr タグ</strong></p>
+        <p>この <abbr title="abbreviation">abbr</abbr> は文章の中にある &lt;abbr&gt; タグの例です。</p>
+        <p><strong>Acronym タグ (<em>HTML5 では非推奨</em>)</strong></p>
+        <p>これは <code>&lt;acronym&gt;</code> タグを使用した <acronym title="three-letter acronym">TLA</acronym> です。</p>
+        <p><strong>Big タグ(<em>HTML5 では非推奨</em>)</strong></p>
+        <p>このテストは<big>大きな</big>文字を表す <code>&lt;big&gt;</code> タグの例ですが、このタグは HTML5 ではサポートされていません。</p>
+        <p><strong>Cite タグ</strong></p>
+        <p>“Code is poetry.” –<cite>WordPress</cite></p>
+        <p><strong>Code タグ</strong></p>
+        <p><code>&lt;code&gt;</code> タグはこのように使います: <code>word-wrap: break-word;</code></p>
+        <p><strong>Delete タグ</strong></p>
+        <p><code>&lt;del&gt;</code> タグは<del>打ち消し線</del>などで表現されますが、このタグは HTML5 ではサポートされていません (代わりに <code>&lt;strike&gt;</code> を使ってください)。</p>
+        <p><strong>Emphasize タグ</strong></p>
+        <p><code>&lt;em&gt;</code> タグは<em>文章の強調</em>に使われます。欧文では斜体になっていることがよくあります。</p>
+        <p><strong>Insert タグ</strong></p>
+        <p><code>&lt;ins&gt;</code> タグは<ins>挿入されたコンテンツ</ins>を意味します。</p>
+        <p><strong>Keyboard タグ</strong></p>
+        <p>このあまり知られていない <code>&lt;kbd&gt;</code> タグは <kbd>Ctrl</kbd> のようにキーボードテキストをエミュレートします。通常、<code>&lt;code&gt;</code> タグと同じようにスタイリングされます。</p>
+        <p><strong>Preformatted タグ</strong></p>
+        <p><code>&lt;pre&gt;</code> タグは複数行のコードのスタイリングに使います。</p>
+<pre>.post-title {
+  margin: 0 0 5px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.2;
+  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+}</pre>
+        <p><strong>Quote タグ</strong></p>
+        <p><q>デベロッパーズ、デベロッパーズ, デベロッパーズ…</q> –スティーブ・バルマー</p>
+        <p><strong>Strike タグ (<em>HTML5 では非推奨</em>)</strong></p>
+        <p>このタグは<span style="text-decoration: line-through;">打ち消し線</span>を表しています。</p>
+        <p><strong>Strong タグ</strong></p>
+        <p>このタグは<strong>太字</strong>テキストを表しています。</p>
+        <p><strong>Subscript タグ</strong></p>
+        <p>Subscript タグ <code>&lt;sub&gt;</code> を使うと H<sub>2</sub>O のような表示の際に「2」が下付きになります。</p>
+        <p><strong>Superscript タグ</strong></p>
+        <p>Superscript タグ <code>&lt;sup&gt;</code> を使うと E = MC<sup>2</sup> のような表示の際に「2」が上付きになります。</p>
+        <p><strong>Teletype タグ (<em>HTML5 では非推奨</em>)</strong></p>
+        <p><code>&lt;tt&gt;</code> はあまり使われないタグですが、<tt>テレタイプテキスト</tt> として通常 <code>&lt;code&gt;</code> タグのようにスタイル</p>
+        <p><strong>Variable タグ</strong></p>
+        <p>変数や引数を表す <var>variables</var> タグです。</p>
+      </article>
+    </div><!-- /main -->
+    <div class="sidebar">
+        <div id="text-2" class="widget widget_text"><h2 class="title">AUTHOR</h2>
+            Author info
+        </div>
+        <div id="categories-2" class="widget widget_categories"><h2 class="title">CATEGORIES</h2>
+          <select name="cat" id="cat" class="postform">
+            <option value="-1">カテゴリーを選択</option>
+            <option class="level-0" value="43">HTML/CSS&nbsp;&nbsp;(19)</option>
+            <option class="level-0" value="279">Mac&nbsp;&nbsp;(3)</option>
+            <option class="level-0" value="190">Web&nbsp;&nbsp;(38)</option>
+            <option class="level-0" value="11">WordPress&nbsp;&nbsp;(36)</option>
+            <option class="level-0" value="10">せいかつ&nbsp;&nbsp;(20)</option>
+            <option class="level-0" value="13">ガジェット&nbsp;&nbsp;(21)</option>
+            <option class="level-0" value="17">ゲーム&nbsp;&nbsp;(4)</option>
+            <option class="level-0" value="16">ソフト紹介&nbsp;&nbsp;(32)</option>
+            <option class="level-0" value="30">デザイン&nbsp;&nbsp;(6)</option>
+            <option class="level-0" value="3">プログラミング&nbsp;&nbsp;(101)</option>
+            <option class="level-1" value="6">&nbsp;&nbsp;&nbsp;.NET&nbsp;&nbsp;(27)</option>
+            <option class="level-1" value="169">&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;(9)</option>
+            <option class="level-1" value="4">&nbsp;&nbsp;&nbsp;C#&nbsp;&nbsp;(28)</option>
+            <option class="level-1" value="53">&nbsp;&nbsp;&nbsp;C++&nbsp;&nbsp;(3)</option>
+            <option class="level-1" value="256">&nbsp;&nbsp;&nbsp;iOS&nbsp;&nbsp;(12)</option>
+            <option class="level-1" value="266">&nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;(1)</option>
+            <option class="level-1" value="129">&nbsp;&nbsp;&nbsp;JavaScript&nbsp;&nbsp;(25)</option>
+            <option class="level-1" value="353">&nbsp;&nbsp;&nbsp;node.js&nbsp;&nbsp;(9)</option>
+            <option class="level-1" value="356">&nbsp;&nbsp;&nbsp;nw.js&nbsp;&nbsp;(6)</option>
+            <option class="level-1" value="18">&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;(15)</option>
+            <option class="level-1" value="5">&nbsp;&nbsp;&nbsp;WPF&nbsp;&nbsp;(24)</option>
+            <option class="level-0" value="15">写真&nbsp;&nbsp;(2)</option>
+            <option class="level-0" value="14">動画&nbsp;&nbsp;(7)</option>
+            <option class="level-0" value="8">映画&nbsp;&nbsp;(1)</option>
+            <option class="level-0" value="9">本&nbsp;&nbsp;(20)</option>
+            <option class="level-0" value="184">絵画&nbsp;&nbsp;(2)</option>
+            <option class="level-0" value="46">雑感&nbsp;&nbsp;(14)</option>
+            <option class="level-0" value="7">音楽&nbsp;&nbsp;(5)</option>
+          </select>
+        </div>
+        <div id="recent-posts-2" class="widget widget_recent_entries"><h2 class="title">RECENT POSTS</h2>
+          <ul>
+            <li><a href="">babelify で ES6 を試す</a></li>
+            <li><a href="">nw.js を使ってみる 5 – 簡易音楽プレーヤー</a></li>
+            <li><a href="">React.js を利用したときのデザイナー協業について考えてみる</a></li>
+            <li><a href="">watchify を試す</a></li>
+            <li><a href="">gulp タスクをファイル分割する</a></li>
+            <li><a href="">IndexedDB を試す</a></li>
+            <li><a href="">gulp でアイコン フォント生成</a></li>
+            <li><a href="">nw.js を使ってみる 4 – 標準 require によるモジュール読み込み</a></li>
+            <li><a href="">Stylus を使ってみる</a></li>
+            <li><a href="">node-webkit を使ってみる 3 – 簡易ファイラー</a></li>
+          </ul>
+        </div>
+        <div id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="title">TAGS</h2>
+          <div class="tagcloud">
+            <a href="" class="tag-link-39" title="28件のトピック" style="font-size: 0.8em;">.NET</a>
+            <a href="" class="tag-link-169" title="16件のトピック" style="font-size: 0.8em;">Android</a>
+            <a href="" class="tag-link-40" title="31件のトピック" style="font-size: 0.8em;">C#</a>
+            <a href="" class="tag-link-95" title="9件のトピック" style="font-size: 0.8em;">EXIF</a>
+            <a href="" class="tag-link-92" title="10件のトピック" style="font-size: 0.8em;">GeoTag</a>
+            <a href="" class="tag-link-83" title="12件のトピック" style="font-size: 0.8em;">Google Map</a>
+            <a href="" class="tag-link-256" title="13件のトピック" style="font-size: 0.8em;">iOS</a>
+            <a href="" class="tag-link-87" title="33件のトピック" style="font-size: 0.8em;">JavaScript</a>
+            <a href="" class="tag-link-18" title="16件のトピック" style="font-size: 0.8em;">PHP</a>
+            <a href="" class="tag-link-203" title="11件のトピック" style="font-size: 0.8em;">Redmine</a>
+            <a href="" class="tag-link-11" title="35件のトピック" style="font-size: 0.8em;">WordPress</a>
+            <a href="" class="tag-link-123" title="9件のトピック" style="font-size: 0.8em;">WP-ImaGeoMap</a>
+            <a href="" class="tag-link-5" title="24件のトピック" style="font-size: 0.8em;">WPF</a>
+            <a href="" class="tag-link-153" title="9件のトピック" style="font-size: 0.8em;">Xperia</a>
+            <a href="" class="tag-link-191" title="21件のトピック" style="font-size: 0.8em;">さくらのVPS</a>
+            <a href="" class="tag-link-31" title="11件のトピック" style="font-size: 0.8em;">ソフト紹介</a>
+            <a href="" class="tag-link-19" title="9件のトピック" style="font-size: 0.8em;">ニコニコ動画</a>
+            <a href="" class="tag-link-24" title="24件のトピック" style="font-size: 0.8em;">プラグイン</a>
+            <a href="" class="tag-link-23" title="21件のトピック" style="font-size: 0.8em;">プログラミング</a>
+            <a href="" class="tag-link-25" title="12件のトピック" style="font-size: 0.8em;">書評</a>
+          </div>
+        </div>
+    </div><!-- /sidebar -->
+  </div><!-- /content -->
+  <div class="clarfix"></div>
+  <footer class="footer">
+    Copyright © 2009 - 2015 akabeko All Rights Reserved.<br>
+    Theme by <i class="icon-github"></i> <a href="https://github.com/akabekobeko/wp-theme-minimalflat2" target="_blank">minimalflat2</a>, <i class="icon-html5"></i> Valid HTML5 and <i class="icon-css3"></i> CSS 3.
+  </footer>
+</div>
+</body>
+</html>
