@@ -275,16 +275,30 @@ size_fill = 100%
       padding 0
 
       .comment {
-        border solid 1px color_gray_light
-        border-radius .2em
+        margin-bottom 1em
 
         .meta {
-          background-color color_gray_light
-          padding .3em 1em
+          border-radius .2em
+          background-color color_gray_light_ex
+          padding .5em
+          
+          .avatar {
+            border-radius 50%
+          }
         }
-        
+
         .body {
-          padding .3em 1em
+          padding 0
+        }
+
+        .reply {
+          text-align right
+        }
+      }
+      
+      .bypostauthor {
+        .meta {
+          background-color color_gray_light
         }
       }
     }
