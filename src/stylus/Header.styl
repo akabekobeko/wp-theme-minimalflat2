@@ -1,0 +1,59 @@
+
+/**
+ * Header
+ */
+
+color_white    = #fff
+color_red      = #e74c3c
+color_red_dark = #c0392b
+
+.page > .header {
+  background-color color_red
+  color color_white
+  letter-spacing 0.07em
+
+  a {
+    text-decoration none
+    color color_white
+
+    &:hover {
+      text-decoration underline
+    }
+  }
+
+  .menu {
+    margin 0
+    padding .5em 0 0 0
+    text-align right
+    background-color color_red_dark
+    box-shadow: 0px 3px 3px -3px rgba( 0, 0, 0, 0.6 )
+
+    ul {
+      display inline-block
+      margin 0
+      padding 0
+      list-style none
+    }
+
+    li {
+      float left
+      margin-right 1em
+      font-size .9em
+    }
+  }
+
+  .title {
+    margin .5em 0 0 0
+    font-size 2.5em
+    font-weight normal
+    text-align center
+  }
+
+  .subtitle {
+    margin 0
+    padding .8em 0
+    font-size .9em
+    font-weight normal
+    text-align center
+  }
+}

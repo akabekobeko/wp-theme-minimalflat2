@@ -1,0 +1,60 @@
+
+/**
+ * Sidebar
+ */
+
+color_text      = #34495e
+color_blue      = #3498db
+color_red       = #e74c3c
+color_red_dark  = #c0392b
+color_gray      = #95a5a6
+color_gray_dark = #7f8c8d
+color_white     = #fff
+
+
+.page > .content > .sidebar .widget {
+  color color_text
+
+  .title {
+    font-weight normal
+    font-size 1.5em
+  }
+
+  ul, ol {
+    margin-left 0
+    padding-left 1em
+
+    li {
+      line-height 1.5em
+    }
+  }
+
+  a {
+    text-decoration none
+    color color_blue
+
+    &:hover {
+      text-decoration underline
+      color color_red
+    }
+  }
+
+  .tagcloud {
+    a {
+      display inline-block
+      text-decoration none
+      margin .2em .1em
+      padding .5em
+      border solid 2px color_red
+      border-radius .3em
+      color color_red
+      letter-spacing .05em
+
+      &:hover {
+        text-decoration none
+        background-color color_red
+        color color_white
+      }
+    }
+  }
+}

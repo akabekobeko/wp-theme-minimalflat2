@@ -1,0 +1,270 @@
+
+/**
+ * Content
+ */
+
+color_text          = #34495e
+color_gray          = #95a5a6
+color_gray_dark     = #7f8c8d
+color_gray_light    = #bdc3c7
+color_gray_light_ex = #ecf0f1
+color_red           = #e74c3c
+color_red_dark      = #c0392b
+color_blue          = #3498db
+color_green         = #2ecc71
+color_white         = #fff
+
+size_fill = 100%
+
+.page > .content [class^="post-"], .page > .content [class*=" post-"] {
+  padding 0 1em 1em 1em
+  color color_text
+
+  a {
+    text-decoration none
+    color color_blue
+
+    &:hover {
+      text-decoration underline
+      color color_red
+    }
+  }
+
+  h1 {
+    font-weight normal
+    font-size 2.5em
+  }
+
+  h2 {
+    padding .5em
+    font-weight normal
+    font-size 1.8em
+    border-left solid 4px color_red
+  }
+
+  h3 {
+    padding .5em
+    font-weight normal
+    font-size 1.5em
+    border-left solid 4px color_gray_light
+  }
+
+  h4 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left double 6px color_gray_light
+  }
+
+  h5 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left solid 2px color_gray_light
+  }
+
+  h6 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left solid 1px color_gray_light
+  }
+
+  p {
+    line-height 1.7em
+  }
+
+  table {
+    width size_fill
+    border-collapse collapse
+    border solid 1px color_gray_light
+  }
+
+  th {
+    padding  1em 1.5em
+    text-align left
+    font-weight normal
+    font-size 1.1em
+    white-space nowrap
+    border solid 1px color_text
+    background-color color_text
+    color color_white
+  }
+
+  td {
+    padding  1em 1.5em
+    border solid 1px color_gray_light
+  }
+
+  tr:nth-child(2n+1) td {
+    background-color color_gray_light_ex
+  }
+
+  ol {
+    counter-reset section
+    list-style-type none
+
+    li {
+      &:before {
+        counter-increment section
+        content counters( section, "." ) ". "
+      }
+    }
+  }
+
+  li {
+    line-height 1.5em
+  }
+
+  blockquote {
+    padding .5em
+    background-color color_gray_light_ex
+    border-left solid 2px color_green
+
+    cite {
+      display block
+      margin-top .3em
+      text-align right
+      font-size .9em
+
+      a {
+        text-decoration none
+        color color_gray_dark
+
+        &:hover {
+          text-decoration underline
+        }
+      }
+    }
+  }
+
+  pre {
+    padding .5em
+    border-left solid 2px color_blue
+    background-color color_gray_light_ex
+  }
+
+  code {
+    padding .2em .5em
+    border-radius .2em
+    background-color color_gray_light_ex
+  }
+
+  dt {
+    padding .5em
+    border-left solid 2px color_green
+  }
+
+  dd {
+    margin-bottom 1em
+    line-height 1.5em
+  }
+
+  .header {
+    padding-bottom 1em
+
+    .title {
+      margin 0
+      padding .5em 0 0 0
+      font-weight normal
+      font-size 2.5em
+
+      a {
+        color color_text
+      }
+    }
+
+    .meta {
+      margin 1em 0 0 0
+
+      [class^="icon-"], [class*=" icon-"] {
+        color color_red
+      }
+
+      .value {
+        margin-right .5em
+      }
+
+      a {
+        color color_gray_dark
+      }
+    }
+  }
+
+  .location {
+    width 100%
+    border-top solid 1px color_gray_dark
+    border-bottom solid 1px color_gray_dark
+
+    a {
+      color color_text
+
+      &:hover {
+        text-decoration none
+        color color_red
+      }
+    }
+
+    .to {
+      box-sizing border-box
+      overflow hidden
+      white-space nowrap
+      text-overflow ellipsis
+      padding 1em 0
+      width 50%
+    }
+
+    .prev {
+      float left
+      text-align left
+      border-right solid 1px color_gray_dark
+    }
+    
+    .next {
+      float right
+      text-align right
+    }
+  }
+
+  .comment {
+    h2 {
+      padding .5em
+      font-weight normal
+      font-size 1.2em
+      border-left solid 4px color_gray
+    }
+
+    .trackbacks {
+      list-style none
+      margin 0
+      padding 0
+
+      li {
+        &:before {
+          font-family 'icomoon'
+          content "\e60a"
+        }
+      }
+    }
+
+    .comments {
+      list-style none
+      margin 0
+      padding 0
+
+      .comment {
+        border solid 1px color_gray_light
+        border-radius .2em
+
+        .meta {
+          background-color color_gray_light
+          padding .3em 1em
+        }
+        
+        .body {
+          padding .3em 1em
+        }
+      }
+    }
+  }
+}
