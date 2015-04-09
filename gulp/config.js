@@ -15,13 +15,14 @@ module.exports = {
      * gulp gulp-load-plugins gulp-stylus gulp-concat gulp-plumber gulp-sourcemaps
      */
     css: {
-        src:    [ stylus + 'App.styl',
+        src:    [ stylus + 'WordPress.styl',
                   stylus + 'Normalize.styl',
                   stylus + 'Icon.styl',
-                  stylus + 'Content.styl',
+                  stylus + 'App.styl',
                   stylus + 'Header.styl',
-                  stylus + 'Footer.styl',
-                  stylus + 'Sidebar.styl'
+                  stylus + 'Content.styl',
+                  stylus + 'Sidebar.styl',
+                  stylus + 'Footer.styl'
                 ],
         dest :  './src',
         bundle: 'style.css'
