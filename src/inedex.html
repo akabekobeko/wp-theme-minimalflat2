@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Main Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -9,13 +10,48 @@
 <div class="page">
   <header class="header">
     <nav class="menu">
-        <ul>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SERIES</a></li>
-            <li><a href="">MEMO</a></li>
-            <li><a href="">SOFTWARE</a></li>
-        </ul>
-        <div class="clarfix"></div>
+      <ul>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">MEMO</a>
+          <ul class="children">
+            <li class="page_item page-item-2527 page_item_has_children"><a href="">ASF</a>
+              <ul class="children">
+                <li class="page_item page-item-3499"><a href="">オブジェクト</a></li>
+                <li class="page_item page-item-3493"><a href="">タグ情報リスト</a></li>
+              </ul>
+              </li>
+            <li class="page_item page-item-3404 page_item_has_children"><a href="">MP3</a>
+              <ul class="children">
+                <li class="page_item page-item-3467"><a href="">ID3v1</a></li>
+                <li class="page_item page-item-3477"><a href="">ID3v2 フレーム ヘッダ</a></li>
+                <li class="page_item page-item-3455"><a href="">ID3v2 フレーム一覧</a></li>
+                <li class="page_item page-item-3449"><a href="">ID3v2 フレーム詳細</a></li>
+                <li class="page_item page-item-3472"><a href="">ID3v2 ヘッダ</a></li>
+                <li class="page_item page-item-3413"><a href="">オーディオ フレーム ヘッダ</a></li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+        <li><a href="">SOFTWARE</a>
+          <ul class="children">
+            <li class="page_item page-item-1154 page_item_has_children"><a href="">WP-ImaGeoMap</a>
+              <ul class="children">
+                <li class="page_item page-item-1285"><a href="">WP-ImaGeoMap Demo</a></li>
+                <li class="page_item page-item-1323"><a href="">WP-ImaGeoMap Manual</a></li>
+              </ul>
+            </li>
+            <li class="page_item page-item-866 page_item_has_children"><a href="">WP-Nicodo</a>
+              <ul class="children">
+                <li class="page_item page-item-1382"><a href="">WP-Nicodo Demo</a></li>
+                <li class="page_item page-item-1379"><a href="">WP-Nicodo Manual</a></li>
+              </ul>
+            </li>
+            <li class="page_item page-item-4920"><a href="">WP-Note Flexible</a></li>
+          </ul>
+        </li>
+        <li><a href="">SERIES</a></li>
+      </ul>
+      <div class="clarfix"></div>
     </nav>
     <h1 class="title"><a href="">Site Title</a></h1>
     <h2 class="subtitle">Hear Nothing, See Nothing, Say Nothing</h2>
@@ -28,8 +64,8 @@
             <div class="meta">
                 <span class="value"><i class="icon-clock"></i> <a href="">2015年4月5日</a></span>
                 <span class="value"><i class="icon-comment"></i> <a href="" title="">0</a></span>
-                <span class="value"><i class="icon-category"></i> <a href="">JavaScript</a>, <a href="">node.js</a></span>
-                <span class="value"><i class="icon-tag" title="tags"></i> <a href="" rel="tag">Browserify</a>, <a href="">gulp</a>, <a href="">JavaScript</a>, <a href="">React.js</a>, <a href="">watchify</a></span>
+                <span class="value"><i class="icon-category"></i> <a href="">develop</a></span>
+                <span class="value"><i class="icon-tag" title="tags"></i> <a href="" rel="tag">Browserify</a>,  <a href="">JavaScript</a></span>
             </div>
         </div>
 
@@ -130,6 +166,14 @@
         <li>リスト項目 3</li>
         <li>リスト項目 4</li>
         </ol>
+        <h2>画像</h2>
+        <div class="wp-caption">
+          <a href="screenshot.png" target="_blank">
+            <img src="screenshot.png" alt="スクリーンショット">
+          </a>
+          <p class="wp-caption-text">キャプション</p>
+        </div>
+
         <h2>HTML 要素タグテスト</h2>
         <p>他の HTML タグは <a href="http://ja.support.wordpress.com/code/" rel="nofollow">FAQ</a> をご覧ください。</p>
         <p><strong>住所タグ</strong></p>

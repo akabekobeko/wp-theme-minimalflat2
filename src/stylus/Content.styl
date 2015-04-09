@@ -1,4 +1,3 @@
-
 /**
  * Content
  */
@@ -12,10 +11,184 @@ color_red           = #e74c3c
 color_red_dark      = #c0392b
 color_blue          = #3498db
 color_green         = #2ecc71
+color_pink          = #fe56aa
 color_white         = #fff
 
 size_fill = 100%
 
+/**
+ * Content - Location
+ */
+.page > .content .location {
+  width 100%
+  border-top solid 1px color_gray_dark
+  border-bottom solid 1px color_gray_dark
+
+  a {
+    color color_text
+
+    &:hover {
+      text-decoration none
+      color color_red
+    }
+  }
+
+  .to {
+    box-sizing border-box
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+    padding 1em 0
+    width 50%
+  }
+
+  .prev {
+    float left
+    text-align left
+    border-right solid 1px color_gray_dark
+  }
+  
+  .next {
+    float right
+    text-align right
+  }
+}
+
+/**
+ * Content - Post - Header
+ */
+.page > .content [class^="post-"] .header, .page > .content [class*=" post-"] .header {
+  padding-bottom 1em
+
+  .title {
+    margin 0
+    padding .5em 0 0 0
+    font-weight normal
+    font-size 2.5em
+
+    a {
+      color color_text
+    }
+  }
+
+  .meta {
+    margin 1em 0 0 0
+
+    [class^="icon-"], [class*=" icon-"] {
+      color color_red
+    }
+
+    .value {
+      margin-right .5em
+    }
+
+    a {
+      color color_gray_dark
+    }
+  }
+}
+
+/**
+ * Content - Post - Comment
+ */
+.page > .content [class^="post-"] .comment, .page > .content [class*=" post-"] .comment {
+  margin-top 2em
+
+  h2 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left solid 2px color_gray
+  }
+
+    [class^="icon-"], [class*=" icon-"] {
+      color color_red
+    }
+
+  .trackbacks {
+    list-style none
+    padding 0
+  }
+
+  .comments {
+    list-style none
+    margin 0
+    padding 0
+
+    .comment {
+      margin-bottom 1em
+
+      .meta {
+        padding .5em .5em 0 .5em
+        border-bottom solid 2px color_gray_light
+        background-color color_gray_light_ex
+
+        .avatar {
+          margin-right 1em
+          border-radius 50%
+          float left
+        }
+
+        .name {
+          font-size .9em
+        }
+
+        .date {
+          text-align right
+          font-size .8em
+        }
+      }
+
+      .body {
+        padding 0
+      }
+    }
+    
+    .bypostauthor {
+      .meta {
+        border-bottom solid 2px color_red
+      }
+    }
+  }
+
+  .form {
+    p {
+      margin .5em 0
+    }
+
+    input[type="text"], textarea {
+      box-sizing border-box
+      border solid 1px color_gray_light
+      padding .3em
+      width 100%
+    }
+
+    .required {
+      color color_pink
+    }
+
+    .submit-area {
+      text-align center
+
+      .submit {
+        padding .3em 1em
+        border-radius .2em
+        border solid 2px color_red
+        background-color color_white
+        color color_red
+
+        &:hover {
+          background-color color_red
+          color color_white
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Content - Post
+ */
 .page > .content [class^="post-"], .page > .content [class*=" post-"] {
   padding 0 1em 1em 1em
   color color_text
@@ -180,127 +353,5 @@ size_fill = 100%
   dd {
     margin-bottom 1em
     line-height 1.5em
-  }
-
-  .header {
-    padding-bottom 1em
-
-    .title {
-      margin 0
-      padding .5em 0 0 0
-      font-weight normal
-      font-size 2.5em
-
-      a {
-        color color_text
-      }
-    }
-
-    .meta {
-      margin 1em 0 0 0
-
-      [class^="icon-"], [class*=" icon-"] {
-        color color_red
-      }
-
-      .value {
-        margin-right .5em
-      }
-
-      a {
-        color color_gray_dark
-      }
-    }
-  }
-
-  .location {
-    width 100%
-    border-top solid 1px color_gray_dark
-    border-bottom solid 1px color_gray_dark
-
-    a {
-      color color_text
-
-      &:hover {
-        text-decoration none
-        color color_red
-      }
-    }
-
-    .to {
-      box-sizing border-box
-      overflow hidden
-      white-space nowrap
-      text-overflow ellipsis
-      padding 1em 0
-      width 50%
-    }
-
-    .prev {
-      float left
-      text-align left
-      border-right solid 1px color_gray_dark
-    }
-    
-    .next {
-      float right
-      text-align right
-    }
-  }
-
-  .comment {
-    h2 {
-      padding .5em
-      font-weight normal
-      font-size 1.2em
-      border-left solid 4px color_gray
-    }
-
-    .trackbacks {
-      list-style none
-      margin 0
-      padding 0
-
-      li {
-        &:before {
-          font-family 'icomoon'
-          content "\e60a"
-        }
-      }
-    }
-
-    .comments {
-      list-style none
-      margin 0
-      padding 0
-
-      .comment {
-        margin-bottom 1em
-
-        .meta {
-          border-radius .2em
-          background-color color_gray_light_ex
-          padding .5em
-          
-          .avatar {
-            border-radius 50%
-          }
-        }
-
-        .body {
-          padding 0
-        }
-
-        .reply {
-          text-align right
-        }
-      }
-      
-      .bypostauthor {
-        .meta {
-          background-color color_gray_light
-        }
-      }
-    }
   }
 }

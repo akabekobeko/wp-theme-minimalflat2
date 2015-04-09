@@ -1,4 +1,3 @@
-
 /**
  * Header
  */
@@ -6,6 +5,11 @@
 color_white    = #fff
 color_red      = #e74c3c
 color_red_dark = #c0392b
+color_blue          = #3498db
+color_gray          = #95a5a6
+color_gray_dark     = #7f8c8d
+color_gray_light    = #bdc3c7
+color_gray_light_ex = #ecf0f1
 
 .page > .header {
   background-color color_red
@@ -18,27 +22,6 @@ color_red_dark = #c0392b
 
     &:hover {
       text-decoration underline
-    }
-  }
-
-  .menu {
-    margin 0
-    padding .5em 0 0 0
-    text-align right
-    background-color color_red_dark
-    box-shadow: 0px 3px 3px -3px rgba( 0, 0, 0, 0.6 )
-
-    ul {
-      display inline-block
-      margin 0
-      padding 0
-      list-style none
-    }
-
-    li {
-      float left
-      margin-right 1em
-      font-size .9em
     }
   }
 
@@ -55,5 +38,81 @@ color_red_dark = #c0392b
     font-size .9em
     font-weight normal
     text-align center
+  }
+}
+
+/**
+ * Header - Menu
+ */
+.page > .header > .menu {
+  margin 0
+  padding .5em 0 0 0
+  text-align right
+  background-color color_red_dark
+  box-shadow: 0px 3px 3px -3px rgba( 0, 0, 0, 0.6 )
+
+  a {
+    display block
+    color color_white
+    text-decoration none
+    line-height 2em
+  }
+
+  ul {
+    display inline-block
+    margin 0
+    padding 0
+    list-style none
+
+    li {
+      &:hover {
+        > ul {
+          display block
+        }
+      }
+    }
+
+    ul {
+      display none
+      float left
+      position: absolute
+      top 1.6em
+      left 0
+      z-index 99999
+      margin 0
+      width 12em
+      background color_gray_light
+
+      ul {
+        top 0
+        left -100%
+      }
+
+      a {
+          padding .5em 1em
+          width 10em
+          height auto
+          line-height 1.4em
+          border-bottom solid 1px color_gray_light_ex
+          background color_white
+          color color_blue
+      }
+    }
+  }
+
+  li {
+    position relative
+    float left
+    margin-right 1em
+    font-size .9em
+    text-align left
+  }
+
+  li:hover > a, ul ul :hover > a, a:focus {
+    background-color color_gray_light_ex
+  }
+
+  li:hover > a, a:focus {
+    background-color color_red_dark
   }
 }
