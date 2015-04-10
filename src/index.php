@@ -13,7 +13,7 @@ while( have_posts() ) : the_post(); ?>
                 <span class="value"><i class="icon-tag"></i> <?php the_tags( '', ', ' ); ?></span>
             </div>
         </div>
-<?php the_content( __( '(more...)' ) ); ?>
+<?php the_content( __( '(more...)', 'minimalflat2' ) ); ?>
       </article>
 <?php endwhile;
 else : ?>

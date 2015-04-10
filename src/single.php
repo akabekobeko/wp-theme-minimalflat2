@@ -35,6 +35,7 @@ else : ?>
         <p><?php __( 'Posts you are looking for was not found.', 'minimalflat2' ); ?></p>
       </article>
 <?php endif; ?>
+    </div>
   </div><!-- /content -->
   <div class="clarfix"></div>
 <?php get_footer(); ?>

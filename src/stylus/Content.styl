@@ -21,6 +21,7 @@ size_fill = 100%
  */
 .page > .content .location {
   width 100%
+  margin 1em 0
   border-top solid 1px color_gray_dark
   border-bottom solid 1px color_gray_dark
 
@@ -83,6 +84,7 @@ size_fill = 100%
     }
 
     a {
+      padding 0
       color color_gray_dark
     }
   }
@@ -94,7 +96,7 @@ size_fill = 100%
 .page > .content [class^="post-"] .comment, .page > .content [class*=" post-"] .comment {
   margin-top 2em
 
-  h2 {
+  h3 {
     padding .5em
     font-weight normal
     font-size 1.2em
@@ -151,7 +153,7 @@ size_fill = 100%
     }
   }
 
-  .form {
+  .comment-form {
     p {
       margin .5em 0
     }
@@ -167,7 +169,7 @@ size_fill = 100%
       color color_pink
     }
 
-    .submit-area {
+    .form-submit {
       text-align center
 
       .submit {
@@ -248,6 +250,10 @@ size_fill = 100%
     line-height 1.7em
   }
 
+  img {
+    max-width 100%
+  }
+
   table {
     margin 1em
     border-collapse collapse
@@ -316,6 +322,7 @@ size_fill = 100%
   pre {
     margin 1em
     padding .5em
+    line-height 1em
     border-left solid 2px color_blue
     background-color color_gray_light_ex
   }
