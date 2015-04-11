@@ -17,45 +17,6 @@ color_white         = #fff
 size_fill = 100%
 
 /**
- * Content - Location
- */
-.page > .content .location {
-  width 100%
-  margin 1em 0
-  border-top solid 1px color_gray_dark
-  border-bottom solid 1px color_gray_dark
-
-  a {
-    color color_text
-
-    &:hover {
-      text-decoration none
-      color color_red
-    }
-  }
-
-  .to {
-    box-sizing border-box
-    overflow hidden
-    white-space nowrap
-    text-overflow ellipsis
-    padding 1em 0
-    width 50%
-  }
-
-  .prev {
-    float left
-    text-align left
-    border-right solid 1px color_gray_dark
-  }
-  
-  .next {
-    float right
-    text-align right
-  }
-}
-
-/**
  * Content - Post - Header
  */
 .page > .content [class^="post-"] .header, .page > .content [class*=" post-"] .header {
@@ -87,6 +48,45 @@ size_fill = 100%
       padding 0
       color color_gray_dark
     }
+  }
+}
+
+/**
+ * Content - Location
+ */
+.page > .content .location, .page > .content .main .location, .page > .content .main-single .location {
+  width 100%
+  margin 3em 0
+  border-top solid 1px color_gray_light
+  border-bottom solid 1px color_gray_light
+
+  a {
+    color color_text
+    text-decoration none
+
+    &:hover {
+      text-decoration underline
+      color color_red
+    }
+  }
+
+  .to {
+    box-sizing border-box
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+    padding 1em 0
+    width 50%
+  }
+
+  .prev {
+    float left
+    text-align left
+  }
+  
+  .next {
+    float right
+    text-align right
   }
 }
 
