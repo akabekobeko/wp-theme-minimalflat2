@@ -5,6 +5,9 @@ load_theme_textdomain( 'minimalflat2', get_template_directory() . '/languages' )
 // Require: Content width
 if( ! isset( $content_width ) ) { $content_width = 640; }
 
+// Reccomended: title-tag
+add_theme_support( 'title-tag' );
+
 // Reccomended: Feed
 add_theme_support( 'automatic-feed-links' );
 
