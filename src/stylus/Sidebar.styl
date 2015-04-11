@@ -2,10 +2,17 @@
  * Sidebar
  */
 
-color_text  = #34495e
-color_blue  = #3498db
-color_red   = #e74c3c
-color_white = #fff
+color_text          = #34495e
+color_gray          = #95a5a6
+color_gray_dark     = #7f8c8d
+color_gray_light    = #bdc3c7
+color_gray_light_ex = #ecf0f1
+color_red           = #e74c3c
+color_red_dark      = #c0392b
+color_blue          = #3498db
+color_green         = #2ecc71
+color_pink          = #fe56aa
+color_white         = #fff
 
 .page > .content > .sidebar .widget {
   color color_text
@@ -17,10 +24,15 @@ color_white = #fff
 
   ul, ol {
     margin-left 0
-    padding-left 1em
+    padding 0 .5em
+    list-style none
 
     li {
+      margin-top -1px
+      padding .5em 0
       line-height 1.5em
+      border-top solid 1px color_gray_light
+      border-bottom solid 1px color_gray_light
     }
   }
 
