@@ -7,6 +7,13 @@ if( ! isset( $content_width ) ) { $content_width = 640; }
 
 // Reccomended: title-tag
 add_theme_support( 'title-tag' );
+function mytheme_title_tag()
+{
+?>
+  <title><?php wp_title( '|', true, 'right' ); ?></title>
+<?php
+}
+add_action( 'wp_head', 'mytheme_title_tag' );
 
 // Reccomended: Feed
 add_theme_support( 'automatic-feed-links' );
