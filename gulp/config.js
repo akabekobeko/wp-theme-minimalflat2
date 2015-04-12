@@ -72,7 +72,8 @@ module.exports = {
      */
     zip: {
         depends: [],
-        src:     './dist/*',
+        src:     './dist/**/*',
+        base:    './dist',
         dest:    './',
         file:    package.name + '.zip'
     }

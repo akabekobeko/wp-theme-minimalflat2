@@ -8,7 +8,7 @@ var config = require( '../config.js' ).zip;
  * @return {Object} ストリーム。
  */
 gulp.task( 'zip', config.depends, function() {
-    return gulp.src( config.src )
+    return gulp.src( config.src, { base: config.base } )
         .pipe( $.zip( config.file ) )
         .pipe( gulp.dest( config.dest ) );
 } );
