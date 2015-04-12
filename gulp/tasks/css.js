@@ -7,7 +7,7 @@ var config = require( '../config.js' ).css;
  *
  * @return {Object} ストリーム。
  */
-gulp.task( 'css', function() {
+gulp.task( 'css', config.depends, function() {
     return gulp.src( config.src )
         .pipe( $.plumber() )
         .pipe( $.sourcemaps.init() )
