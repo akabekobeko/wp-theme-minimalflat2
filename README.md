@@ -8,7 +8,7 @@ WordPress theme for [http://akabeko.me/blog](http://akabeko.me/blog "http://akab
 
 How to install the theme is as follows.
 
-1. Download a zip file from [releases](https://github.com/akabekobeko/wordpress-theme-minimalflat2/releases "releases")
+1. Download a zip file from [releases](https://github.com/akabekobeko/wp-theme-minimalflat2/releases "releases")
 2. Upload a zip file with WordPress theme setteings
 
 ## Build
