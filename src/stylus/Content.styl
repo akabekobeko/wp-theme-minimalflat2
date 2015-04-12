@@ -1,0 +1,364 @@
+/**
+ * Content
+ */
+
+color_text          = #34495e
+color_gray          = #95a5a6
+color_gray_dark     = #7f8c8d
+color_gray_light    = #bdc3c7
+color_gray_light_ex = #ecf0f1
+color_red           = #e74c3c
+color_red_dark      = #c0392b
+color_blue          = #3498db
+color_green         = #2ecc71
+color_pink          = #fe56aa
+color_white         = #fff
+
+size_fill = 100%
+
+/**
+ * Content - Post - Header
+ */
+.page > .content [class^="post-"] .header, .page > .content [class*=" post-"] .header {
+  padding-bottom 1em
+
+  .title {
+    margin 0
+    padding .5em 0 0 0
+    font-weight normal
+    font-size 2.5em
+
+    a {
+      color color_text
+    }
+  }
+
+  .meta {
+    margin 1em 0 0 0
+
+    [class^="icon-"], [class*=" icon-"] {
+      color color_red
+    }
+
+    .value {
+      margin-right .5em
+    }
+
+    a {
+      padding 0
+      color color_gray_dark
+    }
+  }
+}
+
+/**
+ * Content - Location
+ */
+.page > .content .location, .page > .content .main .location, .page > .content .main-single .location {
+  width 100%
+  margin 3em 0
+  border-top solid 1px color_gray_light
+  border-bottom solid 1px color_gray_light
+
+  a {
+    color color_text
+    text-decoration none
+
+    &:hover {
+      text-decoration underline
+      color color_red
+    }
+  }
+
+  .to {
+    box-sizing border-box
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+    padding 1em 0
+    width 50%
+  }
+
+  .prev {
+    float left
+    text-align left
+  }
+  
+  .next {
+    float right
+    text-align right
+  }
+}
+
+/**
+ * Content - Post - Comment
+ */
+.page > .content [class^="post-"] .comment, .page > .content [class*=" post-"] .comment {
+  margin-top 2em
+
+  h3 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left solid 2px color_gray
+  }
+
+    [class^="icon-"], [class*=" icon-"] {
+      color color_red
+    }
+
+  .trackbacks {
+    list-style none
+    padding 0
+  }
+
+  .comments {
+    list-style none
+    margin 0
+    padding 0
+
+    .comment {
+      margin-bottom 1em
+
+      .meta {
+        padding .5em .5em 0 .5em
+        border-bottom solid 2px color_gray_light
+        background-color color_gray_light_ex
+
+        .avatar {
+          margin-right 1em
+          border-radius 50%
+          float left
+        }
+
+        .name {
+          font-size .9em
+        }
+
+        .date {
+          text-align right
+          font-size .8em
+        }
+      }
+
+      .body {
+        padding 0
+      }
+    }
+    
+    .bypostauthor {
+      .meta {
+        border-bottom solid 2px color_red
+      }
+    }
+  }
+
+  .comment-form {
+    p {
+      margin .5em 0
+    }
+
+    input[type="text"], textarea {
+      box-sizing border-box
+      border solid 1px color_gray_light
+      padding .3em
+      width 100%
+    }
+
+    .required {
+      color color_pink
+    }
+
+    .form-submit {
+      text-align center
+
+      .submit {
+        padding .3em 1em
+        border-radius .2em
+        border solid 2px color_red
+        background-color color_white
+        color color_red
+
+        &:hover {
+          background-color color_red
+          color color_white
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Content - Post
+ */
+.page > .content [class^="post-"], .page > .content [class*=" post-"] {
+  padding 0 1em 1em 1em
+  color color_text
+
+  a {
+    text-decoration none
+    color color_blue
+
+    &:hover {
+      text-decoration underline
+      color color_red
+    }
+  }
+
+  h1 {
+    font-weight normal
+    font-size 2.5em
+  }
+
+  h2 {
+    padding .5em
+    font-weight normal
+    font-size 1.8em
+    border-left solid 4px color_red
+  }
+
+  h3 {
+    padding .5em
+    font-weight normal
+    font-size 1.5em
+    border-left solid 4px color_gray_light
+  }
+
+  h4 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left double 6px color_gray_light
+  }
+
+  h5 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left solid 2px color_gray_light
+  }
+
+  h6 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left solid 1px color_gray_light
+  }
+
+  p {
+    margin 1em
+    line-height 1.7em
+  }
+
+  img {
+    max-width 100%
+  }
+
+  table {
+    margin 1em
+    border-collapse collapse
+    border solid 1px color_gray_light
+  }
+
+  th {
+    padding  1em 1.5em
+    text-align left
+    font-weight normal
+    font-size 1.1em
+    white-space nowrap
+    border solid 1px color_text
+    background-color color_text
+    color color_white
+  }
+
+  td {
+    padding  1em 1.5em
+    border solid 1px color_gray_light
+  }
+
+  tr:nth-child(2n+1) td {
+    background-color color_gray_light_ex
+  }
+
+  ol {
+    counter-reset section
+    list-style-type none
+
+    li {
+      &:before {
+        counter-increment section
+        content counters( section, "." ) ". "
+      }
+    }
+  }
+
+  li {
+    line-height 1.5em
+  }
+
+  blockquote {
+    margin 1em
+    padding .5em 0
+    background-color color_gray_light_ex
+    border-left solid 2px color_green
+
+    cite {
+      display block
+      margin-top .3em
+      text-align right
+      font-size .9em
+
+      a {
+        text-decoration none
+        color color_gray_dark
+
+        &:hover {
+          text-decoration underline
+        }
+      }
+    }
+  }
+
+  pre {
+    margin 1em
+    padding .5em
+    line-height 1em
+    border-left solid 2px color_blue
+    background-color color_gray_light_ex
+  }
+
+  code {
+    padding .2em .5em
+    border-radius .2em
+    background-color color_gray_light_ex
+  }
+
+  kbd {
+    padding .2em .5em
+    border-radius .2em
+    border solid 1px color_gray
+    border-bottom solid 2px color_gray
+    border-radius .2em    background-color #f8f8f8
+    box-shadow 0 1px 0 rgba( 0,0,0,0.2 ), 0 0 0 2px color_white inset
+    font-size .9em
+    font-family Arial, Helvetica, sans-serif
+  }
+
+  address {
+    margin 1em
+  }
+
+  dl {
+    margin 1em
+  }
+
+  dt {
+    padding .5em
+    border-left solid 2px color_green
+  }
+
+  dd {
+    margin-bottom 1em
+    line-height 1.5em
+  }
+}
