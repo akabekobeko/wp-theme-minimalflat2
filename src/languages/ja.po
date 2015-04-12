@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: minimalflat2\n"
+"POT-Creation-Date: 2015-04-12 11:54+0900\n"
+"PO-Revision-Date: 2015-04-12 11:54+0900\n"
+"Last-Translator: \n"
+"Language-Team: akabeko\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:30
+msgid "Submit comment"
+msgstr "コメントを投稿する"
+
+#: ../comments.php:32
+msgid "Name"
+msgstr "名前"
+
+#: ../comments.php:34
+msgid "Email"
+msgstr "メールアドレス"
+
+#: ../comments.php:36
+msgid "Website"
+msgstr "ウェブサイト"
+
+#: ../comments.php:39
+msgid "Comment"
+msgstr "コメント"
+
+#: ../functions.php:30
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: ../functions.php:32
+msgid "Sidebar area"
+msgstr "サイドバー"
+
+#: ../functions.php:95 ../page.php:12 ../single.php:14
+msgid "Edit"
+msgstr "編集"
+
+#: ../functions.php:96
+msgid "Reply"
+msgstr "返信"
+
+#: ../functions.php:101
+msgid "Pending"
+msgstr "承認待ち"
+
+#: ../index.php:16
+msgid "(more...)"
+msgstr "（続きを読む…）"
+
+#: ../index.php:21
+msgid "No posts found"
+msgstr "記事が見つかりません"
+
+#: ../index.php:22 ../single.php:35
+msgid "Posts you are looking for was not found."
+msgstr "お探しの記事は見つかりませんでした。"
+
+#: ../page.php:21
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
+#: ../page.php:22
+msgid "Pages you are looking for was not found."
+msgstr "お探しのページは見つかりませんでした。"
+
+#: ../searchform.php:4
+msgid "Search"
+msgstr "検索"
+
+#: ../single.php:34
+msgid "Posts not found"
+msgstr "記事が見つかりません"
+
+#~ msgid "No pages found"
+#~ msgstr "ページが見つかりません"
+
+#~ msgid "REPLY"
+#~ msgstr "返信"
