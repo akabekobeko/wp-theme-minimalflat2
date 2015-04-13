@@ -4,7 +4,7 @@ Theme URI: https://github.com/akabekobeko/wp-theme-minimalflat2
 Author: akabeko
 Author URI: http://akabeko.me/
 Description: WordPress theme for http://akabeko.me/blog
-Version: 1.0.0
+Version: 1.0.1
 Tags: red, one-column, two-columns, right-sidebar, fluid-layout
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,6 +21,12 @@ Activiation and use:
 2. See Appearance -> Theme Options to change theme specific options
 
 == Change Log ==
+
+= 1.0.1 =
+* Changed: Icon font names
+* Fixed: Layout bugs
+* Fixed: Loalize text bugs
+* Fixed: The Jetpack smiley icon is displayed bug
 
 = 1.0.0 =
 * Initial Release

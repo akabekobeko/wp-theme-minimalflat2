@@ -74,7 +74,7 @@ function get_comment_only_number()
 function mytheme_pings( $comment, $args, $depth )
 {
     $GLOBALS['comment'] = $comment; ?>
-    <li><i class="icon-link"></i> <?php echo comment_date(); ?> : <?php comment_author_link(); ?>
+    <li><i class="minimalflat2-icon-link"></i> <?php echo comment_date(); ?> : <?php comment_author_link(); ?>
 <?php }
 
 /**
@@ -92,8 +92,8 @@ function mytheme_comment( $comment, $args, $depth )
     <?php echo get_avatar( $comment, 44 ); ?>
     <div class="name"><?php printf( '<cite class="fn">%s</cite>', get_comment_author_link()) ?></div>
     <div class="date">
-      <i class="icon-clock"></i> <?php printf( '%1$s', get_comment_date() . ' ' . get_comment_time() ) ?><?php edit_comment_link( ' <i class="icon-write"></i>' . __( 'Edit', 'minimalflat2' ), '  ', '' ) ?>
-      <?php comment_reply_link( array_merge( $args, array( 'reply_text' => ' <i class="icon-comment"></i>' . __( 'Reply', 'minimalflat2' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ) ?>
+      <i class="minimalflat2-icon-clock"></i> <?php printf( '%1$s', get_comment_date() . ' ' . get_comment_time() ) ?><?php edit_comment_link( ' <i class="minimalflat2-icon-write"></i>' . __( 'Edit', 'minimalflat2' ), '  ', '' ) ?>
+      <?php comment_reply_link( array_merge( $args, array( 'reply_text' => ' <i class="minimalflat2-icon-comment"></i>' . __( 'Reply', 'minimalflat2' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ) ?>
     </div>
   </div>
   <div class="body">
