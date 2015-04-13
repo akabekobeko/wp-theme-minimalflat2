@@ -7,10 +7,10 @@ while( have_posts() ) : the_post(); ?>
         <div class="header">
             <h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             <div class="meta">
-                <span class="value"><i class="icon-clock"></i> <a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></span>
-                <span class="value"><i class="icon-comment"></i> <?php comments_popup_link( '0','1','%','','-' ); ?></span>
-                <span class="value"><i class="icon-category"></i> <?php the_category( ', ' ); ?></span>
-                <span class="value"><i class="icon-tag"></i> <?php the_tags( '', ', ' ); ?></span>
+                <span class="value"><i class="minimalflat2-icon-clock"></i> <a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></span>
+                <span class="value"><i class="minimalflat2-icon-comment"></i> <?php comments_popup_link( '0','1','%','','-' ); ?></span>
+                <span class="value"><i class="minimalflat2-icon-category"></i> <?php the_category( ', ' ); ?></span>
+                <span class="value"><i class="minimalflat2-icon-tag"></i> <?php the_tags( '', ', ' ); ?></span>
             </div>
         </div>
 <?php the_content( __( '(more...)', 'minimalflat2' ) ); ?>
@@ -23,8 +23,8 @@ else : ?>
       </article>
 <?php endif; ?>
       <nav class="location">
-        <div class="to prev"><?php previous_posts_link( '<i class="icon-arrow-left2"></i> PREV' ); ?></div>
-        <div class="to next"><?php next_posts_link( 'NEXT <i class="icon-arrow-right2"></i>' ); ?></div>
+        <div class="to prev"><?php previous_posts_link( '<i class="minimalflat2-icon-arrow-left"></i> PREV' ); ?></div>
+        <div class="to next"><?php next_posts_link( 'NEXT <i class="minimalflat2-icon-arrow-right"></i>' ); ?></div>
         <div class="clarfix"></div>
       </nav>
     </div><!-- /main -->

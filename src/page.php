@@ -7,9 +7,9 @@ while( have_posts() ) : the_post(); ?>
         <div class="header">
             <h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             <div class="meta">
-                <span class="value"><i class="icon-clock"></i> <a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></span>
-                <span class="value"><i class="icon-comment"></i> <?php comments_popup_link( '0','1','%','','-' ); ?></span>
-                <span class="value"><?php edit_post_link( __( 'Edit', 'minimalflat2' ), '<i class="icon-write"></i> ', '' ); ?></span>
+                <span class="value"><i class="minimalflat2-icon-clock"></i> <a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></span>
+                <span class="value"><i class="minimalflat2-icon-comment"></i> <?php comments_popup_link( '0','1','%','','-' ); ?></span>
+                <span class="value"><?php edit_post_link( __( 'Edit', 'minimalflat2' ), '<i class="minimalflat2-icon-write"></i> ', '' ); ?></span>
             </div>
         </div>
 <?php the_content(); ?>
