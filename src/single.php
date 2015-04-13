@@ -3,7 +3,7 @@
     <div class="main-single">
 <?php if( have_posts() ) :
 while( have_posts() ) : the_post(); ?>
-      <article class="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <article class="post post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="header">
             <h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             <div class="meta">
@@ -35,7 +35,7 @@ else : ?>
         <p><?php __( 'Posts you are looking for was not found.', 'minimalflat2' ); ?></p>
       </article>
 <?php endif; ?>
-    </div>
+    </div><!-- /main -->
   </div><!-- /content -->
   <div class="clarfix"></div>
 <?php get_footer(); ?>
