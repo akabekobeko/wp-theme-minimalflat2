@@ -26,28 +26,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   text-align right
 }
 
-.page > .content [class^="post-"], .page > .content [class*=" post-"] {
-  .wp-caption {
-    padding 1em
-    text-align center
-    box-sizing border-box
-    max-width 100%
-
-    > .wp-caption-text {
-      margin 0
-      padding 0
-    }
-
-    img {
-      max-width 100%
-    }
-  }
-}
-
 .sticky {
   font-weight normal
 }
 
 .gallery-caption {
   font-weight normal
+}
+
+.wp-caption {
+  padding 1em
+  text-align center
+  box-sizing border-box
+  max-width 100%
+
+  > .wp-caption-text {
+    margin 0
+    padding 0
+  }
+
+  img {
+    max-width 100%
+  }
+}
+
+/**
+ * WordPress - Plugin
+ */
+
+.syntaxhighlighter {
+  padding .5em 0
+}
+
+img#wpstats {
+  display none
 }
