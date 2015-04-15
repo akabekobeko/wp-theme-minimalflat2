@@ -1,5 +1,6 @@
 *.
 *.zip
+*.map
 !.gitignore
 
 node_modules/
