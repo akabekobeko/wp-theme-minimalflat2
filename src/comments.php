@@ -36,7 +36,7 @@
         'url' => '<p><i class="minimalflat2-icon-earth"></i> <label for="url">' . __( 'Website', 'minimalflat2' ) . '</label>' . '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" placeholder="' . __( 'Website', 'minimalflat' ) . '" size="60" /></p>'
     ),
 
-    'comment_field' => '<p"><i class="minimalflat2-icon-comment"></i> <label for="comment">' . __( 'Comment', 'minimalflat2' ) . ' <span class="required">*</span></label><br /><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+    'comment_field' => '<p><i class="minimalflat2-icon-comment"></i> <label for="comment">' . __( 'Comment', 'minimalflat2' ) . ' <span class="required">*</span></label><br /><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 
     'comment_notes_after' => ''
 );
