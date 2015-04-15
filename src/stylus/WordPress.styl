@@ -10,6 +10,8 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+size_fill = 100%
+
 /**
  * WordPress
  */
@@ -19,11 +21,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .alignleft {
-  text-align left
+  float left
 }
 
 .alignright {
-  text-align right
+  float right
 }
 
 .sticky {
@@ -35,19 +37,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .wp-caption {
-  padding 1em
-  text-align center
   box-sizing border-box
-  max-width 100%
+  margin auto
+  padding 1em
+  max-width size_fill
 
   > .wp-caption-text {
-    margin 0
+    margin auto
     padding 0
+    width size_fill
+    text-align center
   }
+}
 
-  img {
-    max-width 100%
-  }
+.page > .content .post p.wp-caption-text {
+  text-align center
 }
 
 /**
