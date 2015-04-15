@@ -1,6 +1,6 @@
 {
   "name": "minimalflat2",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "WordPress theme for http://akabeko.me/blog",
   "main": "index.js",
   "scripts": {
