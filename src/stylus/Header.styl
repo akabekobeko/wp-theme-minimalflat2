@@ -54,8 +54,13 @@ color_gray_light_ex = #ecf0f1
   a {
     display block
     color color_white
+    opacity 0.8
     text-decoration none
     line-height 2em
+
+    &:hover {
+      opacity 1.0
+    }
   }
 
   ul {
@@ -96,6 +101,10 @@ color_gray_light_ex = #ecf0f1
           border-bottom solid 1px color_gray_light_ex
           background color_white
           color color_blue
+
+          &:hover {
+            text-decoration none
+          }
       }
     }
   }
