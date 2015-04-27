@@ -77,12 +77,19 @@ html, body {
     > .sidebar {
       float none
       width size_fill
+      text-align center
 
       > .widget {
         display inline-block
+        box-sizing border-box
         margin auto
-        padding 0 1em 1em 1em
+        padding 0 1em 1em
+        width size_fill
         vertical-align top
+
+        .widgettitle {
+          margin .5em 0
+        }
       }
     } 
   }
