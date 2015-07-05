@@ -1,15 +1,7 @@
-/**
- * App
- */
+@import "CommonColor.styl"
+@import "CommonSize.styl"
 
-size_fill                          = 100%
-size_content_2column_width         = 1200px
-size_content_2column_main_width    = 900px
-size_content_1column_main_width    = 1000px
-size_content_2column_sidebar_width = 300px
-
-color_page = #fbfcfa
-
+// ページ全体
 html, body {
   width size_fill
   height size_fill
@@ -19,78 +11,87 @@ html, body {
   background-color color_page
 }
 
+// 回り込み解除
 .clarfix {
   clear both
 }
 
+// サイト全体
 .page {
   width size_fill
   height size_fill
 }
 
-.page > .header {
+// サイトのヘッダー
+.page__header {
   width size_fill
 }
 
-.page > .content {
+// コンテンツ部分
+.page__content {
   max-width size_content_2column_width
   margin auto
+}
 
-  > .main {
-    float left
+// 本文
+.page__content__main {
+  float left
+  box-sizing border-box
+  padding 0 1em
+  width size_content_2column_main_width
+}
+
+// 本文、単一ページ
+.page__content__main-single {
     box-sizing border-box
+    margin auto
     padding 0 1em
-    width size_content_2column_main_width
-  }
+    width size_fill
+    max-width size_content_1column_main_width
+}
 
-  > .main-single {
-      box-sizing border-box
-      margin auto
-      padding 0 1em
-      width size_fill
-      max-width size_content_1column_main_width
-  }
+// サイドバー
+.page__content__sidebar {
+  float right
+  width size_content_2column_sidebar_width
 
-  > .sidebar {
-    float right
-    width size_content_2column_sidebar_width
-
-    > .widgt {
-      padding 0 .5em
-    }
+  > .widgt {
+    padding 0 .5em
   }
 }
 
-.page > .footer {
+// サイトのフッター
+.page__footer {
   width size_fill
 }
 
+// シングル カラム
 @media screen and ( max-width: size_content_2column_width ) {
-  .page > .content {
-    > .main {
-      float none
-      margin auto
-      width size_fill
-      max-width size_content_1column_main_width
-    }
-
-    > .sidebar {
-      float none
-      width size_fill
-      text-align center
-
-      > .widget {
-        display inline-block
-        box-sizing border-box
-        margin auto
-        padding 0 1em 1em
-        width size_fill
-        vertical-align top
-
-        .widgettitle {
-          margin .5em 0
-        }
-      }
-    } 
+  // 本文
+  .page__content__main {
+    float none
+    margin auto
+    width size_fill
+    max-width size_content_1column_main_width
   }
+
+  // サイドバー
+  .page__content__sidebar {
+    float none
+    width size_fill
+    text-align center
+
+    > .widget {
+      display inline-block
+      box-sizing border-box
+      margin auto
+      padding 0 1em 1em
+      width size_fill
+      vertical-align top
+
+      .widgettitle {
+        margin .5em 0
+      }
+    }
+  } 
 }

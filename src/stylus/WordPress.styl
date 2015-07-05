@@ -4,17 +4,13 @@ Theme URI: https://github.com/akabekobeko/wp-theme-minimalflat2
 Author: akabeko
 Author URI: http://akabeko.me/
 Description: WordPress theme for http://akabeko.me/blog
-Version: 1.0.5
+Version: 1.0.6
 Tags: red, one-column, two-columns, right-sidebar, fluid-layout
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-size_fill = 100%
-
-/**
- * WordPress
- */
+@import "CommonSize.styl"
 
 .aligncenter {
   text-align center
@@ -50,14 +46,11 @@ size_fill = 100%
   }
 }
 
-.page > .content .post p.wp-caption-text {
+.page__content__post p.wp-caption-text {
   text-align center
 }
 
-/**
- * WordPress - Plugin
- */
-
+// Plugin
 .syntaxhighlighter {
   padding .5em 0
 }

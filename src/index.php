@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-  <div class="content">
-    <div class="main">
+  <div class="page__content">
+    <div class="page__content__main">
 <?php if( have_posts() ) :
 while( have_posts() ) : the_post(); ?>
-      <article class="post post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="header">
-            <h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-            <div class="meta">
+      <article class="page__content__post post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div class="page__content__post__header">
+            <h1 class="page__content__post__header__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+            <div class="page__content__post__header__meta">
                 <span class="value"><i class="minimalflat2-icon-clock"></i> <a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></span>
                 <span class="value"><i class="minimalflat2-icon-comment"></i> <?php comments_popup_link( '0','1','%','','-' ); ?></span>
                 <span class="value"><i class="minimalflat2-icon-category"></i> <?php the_category( ', ' ); ?></span>
@@ -17,12 +17,12 @@ while( have_posts() ) : the_post(); ?>
       </article>
 <?php endwhile;
 else : ?>
-      <article class="post">
+      <article class="page__content__post">
         <h2><?php __( 'No posts found', 'minimalflat2' ); ?></h2>
         <p><?php __( 'Posts you are looking for was not found.', 'minimalflat2' ); ?></p>
       </article>
 <?php endif; ?>
-      <nav class="location">
+      <nav class="page__content__location">
         <div class="to prev"><?php previous_posts_link( '<i class="minimalflat2-icon-arrow-left"></i> PREV' ); ?></div>
         <div class="to next"><?php next_posts_link( 'NEXT <i class="minimalflat2-icon-arrow-right"></i>' ); ?></div>
         <div class="clarfix"></div>

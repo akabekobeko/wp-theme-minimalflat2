@@ -1,203 +1,8 @@
-/**
- * Content
- */
+@import "CommonColor.styl"
+@import "CommonSize.styl"
 
-color_text          = #34495e
-color_gray          = #95a5a6
-color_gray_dark     = #7f8c8d
-color_gray_light    = #bdc3c7
-color_gray_light_ex = #ecf0f1
-color_red           = #e74c3c
-color_red_dark      = #c0392b
-color_blue          = #3498db
-color_green         = #2ecc71
-color_pink          = #fe56aa
-color_white         = #fff
-
-size_fill = 100%
-size_half = 50%
-
-/**
- * Content - Post - Header
- */
-.page > .content .post .header {
-  padding-bottom 1em
-
-  .title {
-    margin 0
-    padding .5em 0 0 0
-    font-weight normal
-    font-size 2.5em
-
-    a {
-      color color_text
-    }
-  }
-
-  .meta {
-    margin 1em 0 0 0
-
-    [class^="minimalflat2-icon-"], [class*=" minimalflat2-icon-"] {
-      color color_red
-    }
-
-    .value {
-      margin-right .5em
-    }
-
-    a {
-      padding 0
-      color color_gray_dark
-    }
-  }
-}
-
-/**
- * Content - Location
- */
-.page > .content .location {
-  width size_fill
-  margin 3em 0
-  border-top solid 1px color_gray_light
-  border-bottom solid 1px color_gray_light
-
-  .to {
-    box-sizing border-box
-    overflow hidden
-    white-space nowrap
-    text-overflow ellipsis
-    padding 1em 0
-    width size_half
-
-    a {
-      color color_text
-      text-decoration none
-
-      &:visited {
-        color color_text
-      }
-
-      &:hover {
-        text-decoration underline
-        color color_red
-      }
-    }
-  }
-
-  .prev {
-    float left
-    text-align left
-  }
-  
-  .next {
-    float right
-    text-align right
-  }
-}
-
-/**
- * Content - Post - Comment
- */
-.page > .content .post .comment {
-  margin-top 2em
-
-  h3 {
-    padding .5em
-    font-weight normal
-    font-size 1.2em
-    border-left solid 2px color_gray
-  }
-
-    [class^="minimalflat2-icon-"], [class*=" minimalflat2-icon-"] {
-      color color_red
-    }
-
-  .trackbacks {
-    list-style none
-    padding 0
-  }
-
-  .comments, .comments .children {
-    list-style none
-    margin 0
-    padding 0
-
-    .comment {
-      margin-bottom 1em
-
-      .meta {
-        padding .5em .5em 0 .5em
-        border-bottom solid 2px color_gray_light
-        background-color color_gray_light_ex
-
-        .avatar {
-          margin-right 1em
-          border-radius 50%
-          float left
-        }
-
-        .name {
-          font-size .9em
-        }
-
-        .date {
-          text-align right
-          font-size .8em
-        }
-      }
-
-      .body {
-        padding 0
-      }
-    }
-    
-    .bypostauthor {
-      .meta {
-        border-bottom solid 2px color_red
-      }
-    }
-  }
-
-  .comment-form {
-    p {
-      margin .5em 0
-      text-align left
-    }
-
-    input[type="text"], textarea {
-      box-sizing border-box
-      border solid 1px color_gray_light
-      padding .3em
-      width size_fill
-    }
-
-    .required {
-      color color_pink
-    }
-
-    .form-submit {
-      text-align center
-
-      .submit {
-        padding .3em 1em
-        border-radius .2em
-        border solid 2px color_red
-        background-color color_white
-        color color_red
-
-        &:hover {
-          background-color color_red
-          color color_white
-        }
-      }
-    }
-  }
-}
-
-/**
- * Content - Post
- */
-.page > .content .post {
+// 投稿
+.page__content__post {
   padding 0 1em 1em 1em
   color color_text
 
@@ -262,7 +67,7 @@ size_half = 50%
   }
 
   img {
-    display block
+    display inline-block
     margin auto
     max-width size_fill
     height auto
@@ -383,5 +188,188 @@ size_half = 50%
   dd {
     margin-bottom 1em
     line-height 1.5em
+  }
+}
+
+
+// 投稿ヘッダー
+.page__content__post__header {
+  padding-bottom 1em
+}
+
+// 投稿タイトル
+.page__content__post__header__title {
+  margin 0
+  padding .5em 0 0 0
+  font-weight normal
+  font-size 2.5em
+
+  a {
+    color color_text
+
+    &:visited {
+      color color_text
+    }
+
+    &:hover {
+      text-decoration underline
+      color color_text
+    }
+  }
+}
+
+// 投稿メタデータ
+.page__content__post__header__meta {
+  margin 1em 0 0 0
+
+  [class^="minimalflat2-icon-"], [class*=" minimalflat2-icon-"] {
+    color color_red
+  }
+
+  .value {
+    margin-right .5em
+  }
+
+  a {
+    padding 0
+    color color_gray_dark
+  }
+}
+
+// 投稿コメント
+.page__content__post__comment {
+  margin-top 2em
+
+  h3 {
+    padding .5em
+    font-weight normal
+    font-size 1.2em
+    border-left solid 2px color_gray
+  }
+
+    [class^="minimalflat2-icon-"], [class*=" minimalflat2-icon-"] {
+      color color_red
+    }
+
+  .trackbacks {
+    list-style none
+    padding 0
+  }
+
+  .comments, .comments .children {
+    list-style none
+    margin 0
+    padding 0
+
+    .comment {
+      margin-bottom 1em
+
+      .meta {
+        padding .5em .5em 0 .5em
+        border-bottom solid 2px color_gray_light
+        background-color color_gray_light_ex
+
+        .avatar {
+          margin-right 1em
+          border-radius 50%
+          float left
+        }
+
+        .name {
+          font-size .9em
+        }
+
+        .date {
+          text-align right
+          font-size .8em
+        }
+      }
+
+      .body {
+        padding 0
+      }
+    }
+    
+    .bypostauthor {
+      .meta {
+        border-bottom solid 2px color_red
+      }
+    }
+  }
+
+  .comment-form {
+    p {
+      margin .5em 0
+      text-align left
+    }
+
+    input[type="text"], textarea {
+      box-sizing border-box
+      border solid 1px color_gray_light
+      padding .3em
+      width size_fill
+    }
+
+    .required {
+      color color_pink
+    }
+
+    .form-submit {
+      text-align center
+
+      .submit {
+        padding .3em 1em
+        border-radius .2em
+        border solid 2px color_red
+        background-color color_white
+        color color_red
+
+        &:hover {
+          background-color color_red
+          color color_white
+        }
+      }
+    }
+  }
+}
+
+// ページ遷移
+.page__content__location {
+  width size_fill
+  margin 3em 0
+  border-top solid 1px color_gray_light
+  border-bottom solid 1px color_gray_light
+
+  .to {
+    box-sizing border-box
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+    padding 1em 0
+    width size_half
+
+    a {
+      color color_text
+      text-decoration none
+
+      &:visited {
+        color color_text
+      }
+
+      &:hover {
+        text-decoration underline
+        color color_red
+      }
+    }
+  }
+
+  .prev {
+    float left
+    text-align left
+  }
+  
+  .next {
+    float right
+    text-align right
   }
 }
