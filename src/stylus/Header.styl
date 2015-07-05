@@ -1,7 +1,7 @@
 @import "CommonColor.styl"
 
-// Header
-.page > .header {
+// サイトのヘッダー
+.page__header {
   background-color color_red
   color color_white
   letter-spacing 0.07em
@@ -14,27 +14,27 @@
       text-decoration underline
     }
   }
-
-  .title {
-    margin .5em 0 0 0
-    font-size 2.5em
-    font-weight normal
-    text-align center
-  }
-
-  .subtitle {
-    margin 0
-    padding .8em 0
-    font-size .9em
-    font-weight normal
-    text-align center
-  }
 }
 
-/**
- * Header - Menu
- */
-.page > .header > .menu {
+// サイトのタイトル
+.page__header__title {
+  margin .5em 0 0 0
+  font-size 2.5em
+  font-weight normal
+  text-align center
+}
+
+// サイトのサブ タイトル
+.page__header__subtitle {
+  margin 0
+  padding .8em 0
+  font-size .9em
+  font-weight normal
+  text-align center
+}
+
+// サイト メニュー
+.page__header__menu {
   margin 0
   padding .5em 0 0 0
   text-align right
@@ -83,17 +83,17 @@
       }
 
       a {
-          padding .5em 1em
-          width 10em
-          height auto
-          line-height 1.4em
-          border-bottom solid 1px color_gray_light_ex
-          background color_white
-          color color_blue
+        padding .5em 1em
+        width 10em
+        height auto
+        line-height 1.4em
+        border-bottom solid 1px color_gray_light_ex
+        background color_white
+        color color_blue
 
-          &:hover {
-            text-decoration none
-          }
+        &:hover {
+          text-decoration none
+        }
       }
     }
   }
