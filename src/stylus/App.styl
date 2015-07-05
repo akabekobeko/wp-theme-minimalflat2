@@ -1,6 +1,7 @@
 @import "CommonColor.styl"
 @import "CommonSize.styl"
 
+// ページ全体
 html, body {
   width size_fill
   height size_fill
@@ -10,19 +11,23 @@ html, body {
   background-color color_page
 }
 
+// 回り込み解除
 .clarfix {
   clear both
 }
 
+// サイト全体
 .page {
   width size_fill
   height size_fill
 }
 
+// サイトのヘッダー
 .page__header {
   width size_fill
 }
 
+// コンテンツ部分
 .page > .content {
   max-width size_content_2column_width
   margin auto
@@ -52,10 +57,12 @@ html, body {
   }
 }
 
-.page > .footer {
+// サイトのフッター
+.page__footer {
   width size_fill
 }
 
+// シングル カラム
 @media screen and ( max-width: size_content_2column_width ) {
   .page > .content {
     > .main {
