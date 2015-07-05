@@ -1,6 +1,6 @@
 # minimalflat2
 
-WordPress theme for [http://akabeko.me/blog](http://akabeko.me/blog "http://akabeko.me/blog")
+WordPress theme for [http://akabeko.me/blog](http://akabeko.me/blog)
 
 ![minimalflat](./src/screenshot.png)
 
@@ -8,15 +8,15 @@ WordPress theme for [http://akabeko.me/blog](http://akabeko.me/blog "http://akab
 
 How to install the theme is as follows.
 
-1. Download a zip file from [releases](https://github.com/akabekobeko/wp-theme-minimalflat2/releases "releases")
+1. Download a zip file from [releases](https://github.com/akabekobeko/wp-theme-minimalflat2/releases)
 2. Upload a zip file with WordPress theme setteings
 
 ## Build
 
-1. Install [Node.js](https://nodejs.org/ "Node.js"), [gulp.js](http://gulpjs.com/ "gulp.js")
+1. Install [Node.js](https://nodejs.org/)
 2. `git clone https://github.com/akabekobeko/wp-theme-minimalflat2.git`
 3. `cd wp-theme-minimalflat2`
-4. `gulp` or `gulp release`
+4. `npm start` or `npm run release`
 
 ## License
 
