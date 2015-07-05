@@ -1,4 +1,4 @@
-<div class="comment">
+<div class="page__content__post__comment">
 
 <?php if( have_comments() ): ?>
 <?php $comments_cnt = get_comment_only_number(); ?>
