@@ -1,10 +1,12 @@
 {
   "name": "minimalflat2",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "WordPress theme for http://akabeko.me/blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "gulp release"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,6 @@
     "gulp-sourcemaps": "^1.5.1",
     "gulp-stylus": "^2.0.1",
     "gulp-zip": "^3.0.2",
-    "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2"
   }
 }
