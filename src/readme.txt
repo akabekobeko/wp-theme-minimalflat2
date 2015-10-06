@@ -22,6 +22,9 @@ Activiation and use:
 
 == Change Log ==
 
+= 1.0.7 =
+* Fixed: Bug that space is displayed on the right in the iOS Safari
+
 = 1.0.6 =
 * Changed: Change the CSS class of design to BEM
 

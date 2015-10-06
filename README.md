@@ -20,5 +20,4 @@ How to install the theme is as follows.
 
 ## License
 
-GNU General Public License v2 or later.  
-[http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
+[GPLv2](LICENSE)
