@@ -1,32 +1,34 @@
 {
   "name": "minimalflat2",
-  "version": "1.0.6",
   "description": "WordPress theme for http://akabeko.me/blog",
+  "version": "1.0.7",
+  "author": "akabeko",
+  "license": "GPLv2",
   "main": "index.js",
-  "scripts": {
-    "start": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "gulp release"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/akabekobeko/wp-theme-minimalflat2"
-  },
   "keywords": [
     "WordPress",
     "Theme"
   ],
-  "author": "akabeko",
-  "license": "GPLv2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akabekobeko/wp-theme-minimalflat2"
+  },
+  "scripts": {
+    "start": "npm-run-all -p watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "stylus ./src/stylus/App.styl -o ./src/style.css -m --sourcemap-root ./stylus",
+    "watch": "stylus -w ./src/stylus/App.styl -o ./src/style.css -m --sourcemap-root ./stylus",
+    "release:css": "stylus -c ./src/stylus/App.styl -o ./minimalflat2/style.css",
+    "release:clean": "rimraf ./minimalflat2",
+    "release:copy": "cpx \"./src/**/{*.php,*.png,*.txt,*.mo,*.po,*.eot,*.svg,*.ttf,*.woff}\" ./minimalflat2",
+    "release:archive": "bestzip minimalflat2-v1.0.7.zip ./minimalflat2",
+    "release": "npm-run-all -s release:clean release:copy release:css release:archive"
+  },
   "devDependencies": {
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-load-plugins": "^1.0.0-rc",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-stylus": "^2.0.5",
-    "gulp-zip": "^3.0.2",
-    "run-sequence": "^1.1.1"
+    "bestzip": "^1.1.2",
+    "cpx": "^1.2.1",
+    "npm-run-all": "^1.2.11",
+    "rimraf": "^2.4.3",
+    "stylus": "^0.52.4"
   }
 }
