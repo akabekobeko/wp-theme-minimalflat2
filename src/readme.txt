@@ -4,7 +4,7 @@ Theme URI: https://github.com/akabekobeko/wp-theme-minimalflat2
 Author: akabeko
 Author URI: http://akabeko.me/
 Description: WordPress theme for http://akabeko.me/blog
-Version: 1.0.6
+Version: 1.1.0
 Tags: red, one-column, two-columns, right-sidebar, fluid-layout
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,10 @@ Activiation and use:
 
 == Change Log ==
 
+= 1.1.0 =
+* Support for Momentum scroll for the iOS Safari
+* Fix the display of the tag cloud
+
 = 1.0.7 =
 * Fixed: Bug that space is displayed on the right in the iOS Safari
 
@@ -36,7 +40,7 @@ Activiation and use:
 * Fixed: Dummy HTML
 
 = 1.0.4 =
-* Changed: Added the padding to the left and right of the article 
+* Changed: Added the padding to the left and right of the article
 * Fixed: Dummy HTML
 
 = 1.0.3 =
@@ -53,4 +57,3 @@ Activiation and use:
 
 = 1.0.0 =
 * Initial Release
-
