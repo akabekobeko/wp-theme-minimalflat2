@@ -114,12 +114,12 @@ function mytheme_comment( $comment, $args, $depth )
  */
 function mytheme_widget_tag_cloud_args( $args )
 {
-    $args = array(
+    $args = wp_parse_args( $args, array(
         'unit'     => 'em',
         'number'   => 20,
         'smallest' => 0.8,
         'largest'  => 0.8
-    );
+    ) );
 
     return $args;
 }

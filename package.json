@@ -1,9 +1,9 @@
 {
   "name": "minimalflat2",
   "description": "WordPress theme for http://akabeko.me/blog",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "author": "akabeko",
-  "license": "GPLv2",
+  "license": "GPL-2.0",
   "main": "index.js",
   "keywords": [
     "WordPress",
@@ -17,18 +17,21 @@
     "start": "npm-run-all -p watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "stylus ./src/stylus/App.styl -o ./src/style.css -m --sourcemap-root ./stylus",
-    "watch": "stylus -w ./src/stylus/App.styl -o ./src/style.css -m --sourcemap-root ./stylus",
+    "watch:css": "stylus -w ./src/stylus/App.styl -o ./src/style.css -m --sourcemap-root ./stylus",
+    "watch:server": "browser-sync start --server src",
+    "watch": "npm-run-all -p watch:css watch:server",
     "release:css": "stylus -c ./src/stylus/App.styl -o ./minimalflat2/style.css",
     "release:clean": "rimraf ./minimalflat2",
     "release:copy": "cpx \"./src/**/{*.php,*.png,*.txt,*.mo,*.po,*.eot,*.svg,*.ttf,*.woff}\" ./minimalflat2",
-    "release:archive": "bestzip minimalflat2-v1.0.7.zip ./minimalflat2",
+    "release:archive": "bestzip minimalflat2-v1.1.0.zip ./minimalflat2",
     "release": "npm-run-all -s release:clean release:copy release:css release:archive"
   },
   "devDependencies": {
     "bestzip": "^1.1.2",
+    "browser-sync": "^2.11.1",
     "cpx": "^1.2.1",
-    "npm-run-all": "^1.2.11",
-    "rimraf": "^2.4.3",
-    "stylus": "^0.52.4"
+    "npm-run-all": "^1.5.1",
+    "rimraf": "^2.5.1",
+    "stylus": "^0.53.0"
   }
 }
